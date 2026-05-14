@@ -151,7 +151,11 @@ export default function Home() {
 
           </div>
 
-          <form className="space-y-6">
+          <form
+  action="https://formspree.io/f/xwvydnko"
+  method="POST"
+  className="space-y-6"
+>
 
             <input
               type="text"
