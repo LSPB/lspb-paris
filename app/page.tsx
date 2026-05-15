@@ -86,14 +86,32 @@ export default function Home() {
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          {[1, 2, 3].map((item) => (
-            <div
-              key={item}
-              className="aspect-[3/4] bg-neutral-900 rounded-3xl overflow-hidden border border-white/10"
-            >
-              <div className="w-full h-full bg-gradient-to-b from-neutral-800 to-black" />
-            </div>
-          ))}
+         <div className="aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 relative">
+  <Image
+    src="/gallery-1.jpg"
+    alt="Galerie 1"
+    fill
+    className="object-cover hover:scale-105 transition duration-700"
+  />
+</div>
+
+<div className="aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 relative">
+  <Image
+    src="/gallery-2.png"
+    alt="Galerie 2"
+    fill
+    className="object-cover hover:scale-105 transition duration-700"
+  />
+</div>
+
+<div className="aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 relative">
+  <Image
+    src="/gallery-3.png"
+    alt="Galerie 3"
+    fill
+    className="object-cover hover:scale-105 transition duration-700"
+  />
+</div>
 
         </div>
 
